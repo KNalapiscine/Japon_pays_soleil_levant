@@ -18,7 +18,7 @@ class ArticleType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('accroche')
+            ->add('accroche' )
             ->add('titre')
             ->add('texte')
             ->add('resume')

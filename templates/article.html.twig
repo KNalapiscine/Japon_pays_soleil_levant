@@ -1,0 +1,58 @@
+{% extends '/base.html.twig' %}
+
+
+
+{% block content %}
+
+
+   {# <div class="nom">
+        <h1> {{ article.nom }} </h1>
+    </div>
+
+    <article class="article">
+
+            <h2> {{ article.titre }} </h2>
+
+            <h3> {{ article.accroche }} </h3>
+
+            <div class="photo_article" >
+                <img src="{{ asset('#')}}" alt="photo de l'article">
+            </div>
+
+            <p> {{ article.texte }} </p>
+
+            </article>#}
+
+
+
+
+            <div class="nom">
+                <h1> {{ ville }} </h1>
+            </div>
+
+
+
+    <section class="tous_les_articles">
+
+            {% for article in articles %}
+
+                <article class="article" >
+
+                    <h2> {{ article.titre }} </h2>
+
+                    <h3> {{ article.accroche }} </h3>
+
+                    <div class="photo_article" >
+                        <img src="{{ asset('assets/images')}}/{{ article.photos.nom }}" alt="photo de l'article">
+                    </div>
+
+                    <p> {{ article.texte }} </p>
+
+                </article>
+
+            {% endfor %}
+
+    </section>
+
+
+{% endblock %}

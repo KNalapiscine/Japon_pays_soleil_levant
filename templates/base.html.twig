@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Japon</title>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href=" {{ asset('assets/css/style_japon.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <meta name="description" content="Magic the gathering"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="author" content="Katalin Nemeth"/>
+        <meta name="robots" content="index,follow"/>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            {# --------  Bandeau A propos Contact et réseaux sociaux ---------- #}
+                <div class="first_headband">
+                    <div class="opening_menu">
+                        <ul>
+                            <li><a href="#">A propos de nous</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="social_networks">
+                        <div>
+                            <img id="icon" src="{{ asset('assets/images/icon_facebook.png')}}" alt="picto de facebook">
+                            <img id="icon" src="{{ asset('assets/images/icon_twitter.png')}}" alt="picto de twitter">
+                            <img id="icon" src="{{ asset('assets/images/icon_instagram.png')}}" alt="picto d'instagram">
+                            <img id="icon" src="{{ asset('assets/images/icon_pinterest.png')}}" alt="picto de pinterest">
+                        </div>
+                    </div>
+                </div>
+            {# --------  Fermeture du Bandeau A propos Contact et réseaux sociaux ---------- #}
+
+
+            {# --------  Logo de l'association ---------- #}
+
+            <div class="logo_with_hook">
+                <div class="logo_home_page" >
+                    <img src="{{ asset('assets/images/logo_Japon_texte_accroche_gd_web.jpg')}}" alt="logo">
+                </div>
+            </div>
+
+            {# --------  Fin du Logo de l'association ---------- #}
+
+
+            {# --------  Menu de Navigation ---------- #}
+            {% for menu in menus %}
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">{{ menu.libelle }}</a>
+                        <div class="dropdown-content">
+                        {% for sousMenu in sousMenus %}
+                            {%  if menu.id == sousMenu.menu.id %}
+                                <a href="{{path('ville',{'ville':sousMenu.libelle})}}">{{ sousMenu.libelle }}</a>
+                            {% endif %}
+                        {% endfor %}
+                        </div>
+                </li>
+                {% endfor %}
+            {# --------  Fin du Menu de Navigation ---------- #}
+
+
+
+        </header>
+
+        <main class="">
+
+            {# elements depending on each page #}
+            {% block content %}
+
+            {% endblock content %}
+
+        </main>
+
+        <footer>
+
+            <div class="footer">
+
+            </div>
+
+        </footer>
+
+        {# {% block javascripts %}{% endblock %} #}
+
+    </body>
+
+</html>

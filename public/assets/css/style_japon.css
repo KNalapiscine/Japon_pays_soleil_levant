@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial , sans-serif;
+    box-sizing: border-box;
+}
+
+/*header{
+    background-image: url(../images/Pagode_Chureito_vue_sur_le_mont_Fuji.jpg);
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+    position: relative;
+}
+*/
+
+/* ----------------- Bandeau A propos Contact et réseaux sociaux -----------------*/
+.first_headband{
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.opening_menu{
+    width: 20%;
+    /*text-transform: uppercase;*/
+    /*border: solid 1px black;*/
+    /*margin-right: 4px;*/
+}
+
+.opening_menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 13px;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.social_networks{
+    width: 79%;
+    /*border: solid 1px black;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#icon{
+    width: 10%;
+    margin-right: 8px;
+}
+/* ----------------- Bandeau A propos Contact et réseaux sociaux -----------------*/
+
+/* ----------------- Logo de l'association -----------------*/
+.logo_with_hook{
+    width: 70%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+/*
+.logo_home_page img{
+    width: 100%;
+}
+*/
+
+/* ----------------- Fin du Logo de l'association -----------------*/
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.image_home{
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.image_home img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* ----------------- partie pour les contenus qui changent ---------------------*/
+
+
+.tous_les_articles{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.article{
+    width: 40%;
+}
+
+.nom{
+    width: 100%;
+    height: 55px;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 34px;
+    line-height: 20px;
+    color: dimgrey;
+    justify-content: center;
+    font-weight: bold;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: red;
+    justify-content: center;
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+    font-size: 15px;
+    line-height: 17px;
+    color: dimgrey;
+    justify-content: center;
+}
+
+p{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 19px;
+    color: black;
+    justify-content: center;
+}
+
+.photo_article{
+
+}
+
+/* ----------------- footer ---------------------*/
+.footer{
+    width: 100%;
+    background-color: black;
+    height: 28px;
+}
+/* ----------------- fin du footer ---------------------*/
+
+/* ----------------- pour page admin ---------------------*/
+.first_headband_admin{
+    width: 100%;
+    background-color: red;
+    /* background-color: #c0a6a6 */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px;
+    justify-content: center;
+}
+
+.bandeau_entree_admin{
+    width: 50%;
+    /*text-align: center;*/
+}
+
+.bandeau_entree_admin p {
+    font-size: 28px;
+    line-height: 34px;
+    color: white;
+    margin: 0px auto;
+    text-align: center;
+    letter-spacing: 1em;
+}
+
+.band_image_admin{
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #c0a6a6;
+    padding: 8px;
+}
+
+.tout_l_article_aligne {
+    padding: 15px;
+    width: 50%;
+    /*border: solid 1px black;*/
+    margin: 0 auto 5px;
+}
+
+.article_admin{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 70px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bouton_admin {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.b_bouton_admin{
+    background-color: #8b453a;
+    border: solid 2px #8b453a;
+    color: white;
+}
+
+
+
+
+/* Nouvelles règles si la fenêtre fait au plus 768px de large */
+@media screen and (max-width: 1200px)
+{
+
+}

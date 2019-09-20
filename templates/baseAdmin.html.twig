@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Japon</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=" {{ asset('assets/css/style_japon.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="description" content="Magic the gathering"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Katalin Nemeth"/>
+    <meta name="robots" content="index,follow"/>
+
+</head>
+
+<body>
+
+<header>
+
+    {# --------  Bandeau d'entrée de la partie Admin ---------- #}
+    <div class="first_headband_admin">
+        <div class="bandeau_entree_admin">
+            <p>Admin</p>
+        </div>
+    </div>
+    {# --------  Fermeture du Bandeau A propos Contact et réseaux sociaux ---------- #}
+
+
+    {# --------  Logo de l'association ---------- #}
+
+    <div class="logo_with_hook">
+        <div class="logo_home_page" >
+            <img src="{{ asset('assets/images/logo_Japon_texte_accroche_gd_beige_web.jpg')}}" alt="logo">
+        </div>
+    </div>
+
+    {# --------  Fin du Logo de l'association ---------- #}
+
+
+
+
+
+    {# --------  Photo ---------- #}
+
+    <div class="image_home" >
+        <img src="{{ asset('assets/images/Sakura_admin_beige_bandeau.jpg')}}" alt="Sakura les cerisiers ornementaux japonais en fleur">
+    </div>
+
+    {# -------- Fin de Photo ---------- #}
+
+    {# --------  bandeau pour image ---------- #}
+    <div class="band_image_admin">
+
+    </div>
+    {# --------  Fin pour bandeau pour image ---------- #}
+
+
+
+</header>
+
+<main class="">
+
+    {# elements depending on each page #}
+    {% block content %}
+
+    {% endblock content %}
+
+</main>
+
+<footer>
+
+    <div>
+
+    </div>
+
+</footer>
+
+{# {% block javascripts %}{% endblock %} #}
+
+</body>
+
+</html>

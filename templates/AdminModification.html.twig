@@ -1,0 +1,48 @@
+{% extends '/baseAdmin.html.twig' %}
+
+{% block content %}
+
+    <div class="tout_l_article_aligne">
+
+
+
+    {% for article in articles %}
+
+
+            <article class="article_admin">
+
+
+                <h2> {{ article.titre }} </h2>
+
+                {# Zone pour accéder aux pages pour insérer, supprimer et modifier un article #}
+                <div >
+
+                    <div class="bouton_admin">
+                        <button class="b_bouton_admin">Insérer</button>
+                    </div>
+
+                    <br>
+
+                    <div class="bouton_admin">
+                        <button class="b_bouton_admin">Modifier</button>
+                    </div>
+
+                    <br>
+
+                    <div class="bouton_admin">
+                        <button class="b_bouton_admin">Supprimer</button>
+                    </div>
+
+                    <br>
+
+                </div>
+
+
+
+        </article>
+
+    {% endfor %}
+
+    </div>
+
+    {% endblock %}
